@@ -1,0 +1,45 @@
+* {
+    font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 500px;
+    width: 400px;
+    position: relative;
+    left: 40%;
+    top: 100px;
+}
+.main-container > div {
+    border: 1px solid  rgb(37, 56, 62);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#first-row{
+    grid-area: 1/ 1 /span 1/ span 4;
+    background-color: rgb(37, 56, 62);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 10px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+#equals{
+    grid-area: 3/ 4/span 4/span 1;
+    background-color: rgb(230, 54, 84);
+    color: black;
+    border-bottom-right-radius: 15px;
+}
+.second-row {
+    background-color: rgb(192, 255, 255);
+}
+body > div div:nth-of-type(15){
+    border-bottom-left-radius: 15px;
+}
+
+
